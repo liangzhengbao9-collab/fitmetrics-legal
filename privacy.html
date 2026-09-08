@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - FitMetrics AI</title>
+  <style>
+    :root {
+      --bg: #0F172A;
+      --card-bg: #1E293B;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+      --accent: #10B981;
+      --border: #334155;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 32px;
+      background: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    h1 { color: var(--accent); font-size: 28px; margin-top: 0; }
+    h2 { color: var(--text); font-size: 20px; border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-top: 24px; }
+    p, li { color: var(--text-muted); font-size: 15px; }
+    ul { padding-left: 20px; }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--accent);
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #64748B;
+      text-align: center;
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">Legal Document</span>
+    <h1>Privacy Policy for FitMetrics AI</h1>
+    <p><strong>Effective Date:</strong> September 8, 2026<br>
+       <strong>Last Updated:</strong> September 8, 2026</p>
+
+    <h2>1. Overview & Core Mission</h2>
+    <p>FitMetrics AI ("we", "our", or "the App") is committed to protecting your personal privacy and providing complete transparency regarding data processing. This Privacy Policy details how we collect, use, process, and protect your data when you use our mobile application and related services.</p>
+
+    <h2>2. Medical Disclaimer (Non-Medical Utility)</h2>
+    <p><strong>FitMetrics AI is not a certified medical device and does not provide medical diagnoses, treatment, or clinical dietary advice.</strong> All caloric estimations, Total Daily Energy Expenditure (TDEE) calculations, macronutrient breakdowns, and workout analytics are strictly intended for general fitness, athletic, and informational purposes. Consult a physician or qualified healthcare specialist before beginning any new diet or training regimen.</p>
+
+    <h2>3. Information We Collect and How We Use It</h2>
+    <ul>
+      <li><strong>Account Credentials:</strong> Email address and authentication tokens via Supabase Auth to maintain secure cross-device access and user profiles.</li>
+      <li><strong>Biometric Data:</strong> Height, body weight, biological gender, age, and activity level. This information is processed strictly to execute standard mathematical metabolic formulas (e.g., Mifflin-St Jeor) and dynamic TDEE adaptive adjustments.</li>
+      <li><strong>Nutrition and Meal Records:</strong> Food names, caloric content, macronutrients (protein, carbs, fat), and optional timestamps logged by you.</li>
+      <li><strong>Workout Logs:</strong> Exercise names, sets, repetitions, and weights lifted to provide progressive overload analytics.</li>
+      <li><strong>Meal Images (Camera & Gallery):</strong> When you utilize our AI Food Scanner, meal images are transmitted securely to cloud inference engines (Google Gemini API) to identify food items and estimate macronutrients. Images are processed ephemerally for inference and are <strong>never sold or used for commercial marketing</strong>.</li>
+      <li><strong>Subscription and Purchase Identifiers:</strong> In-app subscription states and non-sensitive entitlement tokens managed via RevenueCat and Google Play Billing.</li>
+    </ul>
+
+    <h2>4. Data Storage, Security & Encryption</h2>
+    <p>We implement strict industry standards to protect your data:</p>
+    <ul>
+      <li>All communication between the mobile app, backend servers, and AI inference endpoints is encrypted in transit using <strong>TLS 1.3 / HTTPS</strong>.</li>
+      <li>Database records are isolated using PostgreSQL <strong>Row Level Security (RLS)</strong>, ensuring that only you have access to your personal data.</li>
+    </ul>
+
+    <h2>5. Third-Party Service Providers</h2>
+    <p>We work with trusted infrastructure partners to deliver the service:</p>
+    <ul>
+      <li><strong>Supabase:</strong> Cloud database, authentication, and secure API backend.</li>
+      <li><strong>Google Gemini API:</strong> Ephemeral multimodal computer vision inference for meal estimation.</li>
+      <li><strong>RevenueCat & Google Play:</strong> Secure in-app purchase verification and subscription management.</li>
+      <li><strong>Open Food Facts:</strong> Open-source nutritional fallback queries for barcode lookups.</li>
+    </ul>
+
+    <h2>6. Your Data Rights & Account Deletion</h2>
+    <p>You have full ownership and sovereignty over your data. You may at any time:</p>
+    <ul>
+      <li>Access and review your logged profile and history directly in the app.</li>
+      <li>Request the immediate and permanent deletion of your account and all associated data via <strong>Settings &gt; Delete Account & Data</strong> in the application, or by visiting our public deletion page: <a href="account-deletion.html">FitMetrics AI Account Deletion Page</a>.</li>
+    </ul>
+
+    <h2>7. Contact Us</h2>
+    <p>If you have any questions or privacy inquiries, please reach out to our privacy officer at: <a href="mailto:liang.zhengbao9@gmail.com">liang.zhengbao9@gmail.com</a>.</p>
+
+    <div class="footer">
+      &copy; 2026 FitMetrics AI. All rights reserved. Built with Flutter & Supabase.
+    </div>
+  </div>
+</body>
+</html>

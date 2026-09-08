@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account & Data Deletion - FitMetrics AI</title>
+  <style>
+    :root {
+      --bg: #0F172A;
+      --card-bg: #1E293B;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+      --accent: #EF4444;
+      --accent-green: #10B981;
+      --border: #334155;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 32px;
+      background: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    h1 { color: #F8FAFC; font-size: 26px; margin-top: 0; }
+    h2 { color: var(--text); font-size: 19px; border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-top: 24px; }
+    p, li { color: var(--text-muted); font-size: 15px; }
+    ul, ol { padding-left: 20px; }
+    .method-card {
+      background: #0F172A;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 16px 0;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      background: rgba(239, 68, 68, 0.15);
+      color: var(--accent);
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .support-btn {
+      display: inline-block;
+      margin-top: 12px;
+      background: #2563EB;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .support-btn:hover { background: #1D4ED8; text-decoration: none; }
+    .footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #64748B;
+      text-align: center;
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">Google Play Compliance</span>
+    <h1>Account & Data Deletion Policy</h1>
+    <p>At <strong>FitMetrics AI</strong>, you have absolute control over your digital footprint. In accordance with Google Play Developer Policies, this document explains how you can request the permanent deletion of your account and all associated personal data.</p>
+
+    <h2>Method 1: Direct In-App Deletion (Instant & Automated)</h2>
+    <div class="method-card">
+      <p>If you currently have the FitMetrics AI app installed on your device, you can trigger an immediate cascading data wipe:</p>
+      <ol>
+        <li>Open the <strong>FitMetrics AI</strong> application.</li>
+        <li>Navigate to <strong>Settings</strong> (gear icon in the bottom navigation).</li>
+        <li>Scroll down to the <strong>Account & Security</strong> section.</li>
+        <li>Tap <strong>Delete Account & Data</strong>.</li>
+        <li>Review the irreversible data wipe warning and tap <strong>Confirm Delete</strong>.</li>
+      </ol>
+      <p><em>Upon confirmation, our backend database triggers an automated cascading purge immediately.</em></p>
+    </div>
+
+    <h2>Method 2: Web / Remote Deletion Request (Without Installing the App)</h2>
+    <div class="method-card">
+      <p>If you have already uninstalled the application or cannot access your device, you can submit a manual deletion request by emailing our dedicated data officer:</p>
+      <p>Send an email to: <a href="mailto:liang.zhengbao9@gmail.com?subject=Account%20Deletion%20Request%20-%20FitMetrics%20AI" class="support-btn">Request Deletion via Email (liang.zhengbao9@gmail.com)</a></p>
+      <p>Please ensure you:</p>
+      <ul>
+        <li>Send the request from the email address registered with your FitMetrics AI account.</li>
+        <li>Include "Account Deletion Request - FitMetrics AI" in the subject line.</li>
+      </ul>
+      <p><strong>Fulfillment Timeframe:</strong> Remote deletion requests are verified and processed within <strong>7 business days</strong>.</p>
+    </div>
+
+    <h2>Scope of Data Deleted (Cascade Wipe)</h2>
+    <p>When an account is purged, the following data records are permanently erased from our PostgreSQL (Supabase) production database:</p>
+    <ul>
+      <li><strong>Authentication Profile:</strong> User UUID, email address, password hash, and active session tokens.</li>
+      <li><strong>Biometric Records:</strong> Height, current weight, target weight, age, and biological gender.</li>
+      <li><strong>Nutritional Logs:</strong> Historical calorie intake, macronutrient calculations, and food log entries.</li>
+      <li><strong>Workout Logs:</strong> Exercise records, set logs, reps, and volume progression tracking.</li>
+      <li><strong>Weight History:</strong> Historical weight logs and adaptive TDEE rolling regression cache.</li>
+    </ul>
+
+    <h2>Data Retention Exceptions</h2>
+    <p>FitMetrics AI does not retain your personal health or biometric data once deleted. Non-identifiable financial transaction tokens (such as Google Play Order IDs for subscription billing verification) are held by Google Play and RevenueCat solely for statutory legal and taxation record obligations, completely decoupled from your deleted biometric profile.</p>
+
+    <div class="footer">
+      &copy; 2026 FitMetrics AI. Back to <a href="privacy.html" style="color:#10B981;">Privacy Policy</a>.
+    </div>
+  </div>
+</body>
+</html>
